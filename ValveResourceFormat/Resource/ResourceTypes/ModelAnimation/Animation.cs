@@ -291,7 +291,7 @@ namespace ValveResourceFormat.ResourceTypes.ModelAnimation
         /// <returns>float.</returns>
         private static float ReadHalfFloat(BinaryReader reader)
         {
-            return HalfTypeHelper.Convert(reader.ReadUInt16());
+            return (float)reader.ReadHalf();
         }
 
         /// <summary>
